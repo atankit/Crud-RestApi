@@ -27,7 +27,7 @@ spring.datasource.password=root
 ```
 ### 6. Right click on Application.java file and run as Java Application
 
-## Once Sprint Boot Application will be started successfully then we can call following Endpoints by using POSTMAN    
+## Explore Rest APIs following Endpoints by using POSTMAN    
 
 | Http Method | URL     | Description  | Valid HTTP status codes |
 | :-------- | :------- | :------------------------- | :------ |
@@ -55,6 +55,6 @@ spring.datasource.password=root
 | **DELETE** | /books/2 | Delete a book | 204
 | **POST** | /upload-file | Upload a image | 201
 
-Select Body -> form-data -> Enter your parameter name (file according to your code)
-On the right side of the Key field, while hovering your mouse over it, there is a dropdown menu to select between Text/File. Select File, then a "Select Files" button will appear in the Value field.
+### Select Body -> form-data -> Enter your parameter name (file according to your code)
+### On the right side of the Key field, while hovering your mouse over it, there is a dropdown menu to select between Text/File. Select File, then a "Select Files" button will appear in the Value field.
 
