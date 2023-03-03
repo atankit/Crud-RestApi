@@ -28,6 +28,23 @@ spring.datasource.password=root
 ### 6. Right click on Application.java file and run as Java Application
 
 ## Once Sprint Boot Application will be started successfully then we can call following Endpoints by using POSTMAN    
+
 | Http Method | URL     | Description  | Valid HTTP status codes |
 | :-------- | :------- | :------------------------- | :------ |
-| **GET** | /books | Create a book | 201
+| **GET** | /books | Read all book | 200
+| **GET** | /books/2 | Read a single book | 200
+
+| **POST** | /books | Create a book | 201
+### set content type as in header as `application/json`
+### set request body as raw with JSON payload
+```
+  {
+    "name": "C++",
+    "author": "Nitesh",
+    "publication": "Rajput Publication",
+    "category": "Computer Programming",
+    "pages": 1500,
+    "price": 240
+  }
+
+```
