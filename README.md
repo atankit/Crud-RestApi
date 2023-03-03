@@ -33,18 +33,20 @@ spring.datasource.password=root
 | :-------- | :------- | :------------------------- | :------ |
 | **GET** | /books | Read all book | 200
 | **GET** | /books/2 | Read a single book | 200
-
 | **POST** | /books | Create a book | 201
 ### set content type as in header as `application/json`
 ### set request body as raw with JSON payload
 ```
   {
-    "name": "C++",
-    "author": "Nitesh",
-    "publication": "Rajput Publication",
-    "category": "Computer Programming",
-    "pages": 1500,
-    "price": 240
-  }
+    "id": 2,
+    "title": "Java",
+    "author": {
+        "authorId": 2,
+        "firstName": "Abc",
+        "lastName": "Def",
+        "language": "English"
+    }
+}
 
 ```
+
