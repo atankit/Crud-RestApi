@@ -12,7 +12,7 @@
 
 ### 4. Create Mysql database
 
-    `create database springjpa_db`
+    `create database book_db`
     
 ### 5. Change mysql username and password as per your installation
 
@@ -21,7 +21,7 @@
 * change your `port number` , `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
 
 ``` 
-spring.datasource.url=jdbc:mysql://localhost:3305/springjpa	
+spring.datasource.url=jdbc:mysql://localhost:3305/book_db	
 spring.datasource.username=root
 spring.datasource.password=root 
 ```
