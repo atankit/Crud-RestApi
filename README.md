@@ -31,8 +31,8 @@ spring.datasource.password=root
 
 | Http Method | URL     | Description  | Valid HTTP status codes |
 | :-------- | :------- | :------------------------- | :------ |
-| **GET** | /books | Read all book | 200
-| **GET** | /books/2 | Read a single book | 200
+| **GET** | /books | Retrieve all book | 200,204,206
+| **GET** | /books/2 | Read a book | 200
 | **POST** | /books | Create a book | 201
 ### set content type as in header as `application/json`
 ### set request body as raw with JSON payload
@@ -49,4 +49,12 @@ spring.datasource.password=root
 }
 
 ```
+| Http Method | URL     | Description  | Valid HTTP status codes |
+| :-------- | :------- | :------------------------- | :------ |
+| **PUT** | /books/2 | Update a book | 200
+| **DELETE** | /books/2 | Delete a book | 204
+| **POST** | /upload-file | Upload a image | 201
+
+Select Body -> form-data -> Enter your parameter name (file according to your code)
+On the right side of the Key field, while hovering your mouse over it, there is a dropdown menu to select between Text/File. Select File, then a "Select Files" button will appear in the Value field.
 
