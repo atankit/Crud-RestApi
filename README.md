@@ -2,7 +2,7 @@
 # CRUD Example of Spring-Boot-REST-JPA-Hibernate-MySQL-DevTool (BookStore)
 ## 1. You can clone it from github by running following command
 ```
- $ git clone git@github.com:atankit/CurdAPI.git
+ $ git clone git@github.com:atankit/Curd-RestApi.git
 ```
 ### 2. Import project into eclipse
 ```
